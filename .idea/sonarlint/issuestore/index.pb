@@ -53,3 +53,7 @@ p
 @customer/src/main/java/com/lambarki/customer/CustomerConfig.java,f\2\f2bb01382e4f6354be06e2e7a00dfd98d3305ff7
 t
 Dcustomer/src/main/java/com/lambarki/customer/FraudCheckResponse.java,0\8\08a29251cac7bec15cafc6721cb01fc8c3282c79
+E
+eureka-server/pom.xml,b\3\b39ae52d769ea03b699b5602439afd875433c8a7
+‚
+Reureka-server/src/main/java/com/lambarki/eurekaserver/EurekaServerApplication.java,4\9\49644ce309c656f5b29b95c58837bf6276bd1371
