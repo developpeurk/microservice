@@ -12,13 +12,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Getter
 public class NotificationConfig {
-    @Value("${rabbitmq.template.exchange}")
+    @Value("${spring.rabbitmq.template.exchange}")
     private String internalExchange;
 
-    @Value("${rabbitmq.template.default-receive-queue}")
+    @Value("${spring.rabbitmq.template.default-receive-queue}")
     private String notificationQueue;
 
-    @Value("${rabbitmq.template.routing-key}")
+    @Value("${spring.rabbitmq.template.routing-key}")
     private String internalNotificationRoutingKey;
 
 

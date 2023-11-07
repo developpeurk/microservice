@@ -1,5 +1,6 @@
 package com.lambarki.customer;
 
+import com.lambarki.amqp.RabbitMQMessageProducer;
 import com.lambarki.clients.fraud.FraudCheckResponse;
 import com.lambarki.clients.fraud.FraudClient;
 import com.lambarki.clients.notification.NotificationClient;
@@ -15,7 +16,7 @@ public class CustomerService {
     private final CustomerRepository customerRepository;
     private final RestTemplate restTemplate;
     private final FraudClient fraudClient;
-    private final NotificationClient notificationClient;
+    private final RabbitMQMessageProducer rabbitMQMessageProducer;
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
                 .firstname(request.firstname())
@@ -33,15 +34,15 @@ public class CustomerService {
             throw new IllegalStateException("fraudster");
         }
 
-        // todo: send notification
-        // todo: make it async. i.e add to queue
-        notificationClient.sendNotification(
-                new NotificationRequest(
-                        customer.getId(),
-                        customer.getEmail(),
-                        String.format("Hi %s, welcome to Amigoscode...",
-                                customer.getFirstname())
-                )
+        NotificationRequest notificationRequest = new NotificationRequest(
+                customer.getId(),
+                customer.getEmail(),
+                String.format("Hi %s, welcome to YassineCode...",
+                        customer.getFirstname())
         );
+        rabbitMQMessageProducer.publish(
+                notificationRequest,
+                "internal.exchange",
+                "internal.notification.routing-key");
     }
 }
