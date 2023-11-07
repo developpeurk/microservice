@@ -93,3 +93,5 @@ i
 Lnotification/src/main/java/com/lambarki/notification/NotificationConfig.java,1\d\1da05d9478e479cf00e093788e3b3f0020235d34
 r
 Bamaqp/src/main/java/com/lambarki/amqp/RabbitMQMessageProducer.java,e\e\ee8a299cf628108c8b6d035c0ed6399622f9047e
+‡
+Wnotification/src/main/java/com/lambarki/notification/rabbitmq/NotificationConsumer.java,5\3\535ae2d966bc455ece2d1985001e248cdb7895ac
