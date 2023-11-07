@@ -95,3 +95,17 @@ r
 Bamaqp/src/main/java/com/lambarki/amqp/RabbitMQMessageProducer.java,e\e\ee8a299cf628108c8b6d035c0ed6399622f9047e
 ‡
 Wnotification/src/main/java/com/lambarki/notification/rabbitmq/NotificationConsumer.java,5\3\535ae2d966bc455ece2d1985001e248cdb7895ac
+_
+/clients/src/test/java/com/lambarki/AppTest.java,9\9\99fe8be89bfa7e29c6befea9d2c4cd589cebf3b3
+]
+-amaqp/src/test/java/com/lambarki/AppTest.java,9\2\928fd872e5e607c58727ee69fd39e077f060eb9d
+f
+6customer/src/test/java/com/lambarki/fraud/AppTest.java,6\f\6f294422b82aa5e527bf088047a5958b3bb48a5d
+c
+3fraud/src/test/java/com/lambarki/fraud/AppTest.java,6\8\68b2acab10ee47579f334ac246c6f1ff0bfa0024
+e
+5eureka-server/src/test/java/com/lambarki/AppTest.java,b\1\b19c7acd2b007b8483a451bfebd1f70e93533846
+d
+4notification/src/test/java/com/lambarki/AppTest.java,2\3\23c26dc464ca0e105fbb608ba17f401593ff2d4a
+]
+-apigw/src/test/java/com/lambarki/AppTest.java,e\8\e87e554691b543599285f18baec449a750065cd8

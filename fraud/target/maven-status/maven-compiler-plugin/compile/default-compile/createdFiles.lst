@@ -1,0 +1,6 @@
+com\lambarki\fraud\FraudCheckHistory.class
+com\lambarki\fraud\FraudCheckService.class
+com\lambarki\fraud\FraudController.class
+com\lambarki\fraud\FraudCheckHistoryRepository.class
+com\lambarki\fraud\FraudApplication.class
+com\lambarki\fraud\FraudCheckHistory$FraudCheckHistoryBuilder.class

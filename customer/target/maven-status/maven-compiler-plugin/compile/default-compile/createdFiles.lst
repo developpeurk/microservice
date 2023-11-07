@@ -1,0 +1,8 @@
+com\lambarki\customer\CustomerConfig.class
+com\lambarki\customer\CustomerRegistrationRequest.class
+com\lambarki\customer\CustomerController.class
+com\lambarki\customer\CustomerService.class
+com\lambarki\customer\CustomerRepository.class
+com\lambarki\customer\Customer.class
+com\lambarki\customer\Customer$CustomerBuilder.class
+com\lambarki\customer\CustomerApplication.class
