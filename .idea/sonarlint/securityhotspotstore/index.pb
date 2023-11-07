@@ -81,3 +81,13 @@ Oclients/src/main/java/com/lambarki/clients/notification/NotificationClient.java
 Lcustomer/src/main/java/com/lambarki/customer/config/OpenTelemetryConfig.java,e\8\e8d78a84b8c9b8f69be3db929cfef55521d98e78
 u
 Ecustomer/src/main/java/com/lambarki/customer/OpenTelemetryConfig.java,4\5\4572d3d409020cce21306b0050cdd8dca0f10f09
+=
+apigw/pom.xml,7\6\769e90cc07d0503e53ff9da3a1e936a2b49abb7c
+i
+9apigw/src/main/java/com/lambarki/gw/ApiGWApplication.java,5\8\58fe3a76a3d2686e6bda9beb9935b7f93a0d59fe
+=
+amaqp/pom.xml,c\7\c723fd1b690508ac3c419c5b56cf5bae8c175505
+i
+9amaqp/src/main/java/com/lambarki/amqp/RabbitMQConfig.java,d\0\d023b920166170198c193f29698c4745e5c36f7d
+|
+Lnotification/src/main/java/com/lambarki/notification/NotificationConfig.java,1\d\1da05d9478e479cf00e093788e3b3f0020235d34

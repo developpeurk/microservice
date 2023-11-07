@@ -16,6 +16,12 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+
+  rabbitmq:
+    template:
+      exchange: internal.exchange
+      default-receive-queue: notification.queue
+      routing-key: internal.notification.routing-key
 eureka:
   client:
     service-url:
@@ -30,3 +36,5 @@ management:
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+
+
