@@ -1,11 +1,13 @@
 
 J
-java:S5411"(Use a primitive boolean expression here.(ÈÇÏßşÿÿÿÿ8‰¦¹¶º1
-r
-java:S2259"PA "NullPointerException" could be thrown; "fraudCheckResponse" is nullable here.(ÈÇÏßşÿÿÿÿ8¬¦¹¶º1
+java:S5411 "(Use a primitive boolean expression here.(ÈÇÏßşÿÿÿÿ8¹×ÔÇº1
 T
-java:S1135"2Complete the task associated to this TODO comment.(‹éç—ıÿÿÿÿ8¥ßú³º1
+java:S1135"2Complete the task associated to this TODO comment.(‹éç—ıÿÿÿÿ8–ÀÿÆº1
 O
-java:S1135"2Complete the task associated to this TODO comment.(ÄÙáú8¥ßú³º1
+java:S1135"2Complete the task associated to this TODO comment.(ÄÙáú8–ÀÿÆº1
 O
-java:S1135"2Complete the task associated to this TODO comment.(é¤8Èğ÷³º1
+java:S1135"2Complete the task associated to this TODO comment.(é¤8—ÀÿÆº1
+O
+java:S1135$"2Complete the task associated to this TODO comment.(Á°µ8å¼—Çº1
+O
+java:S1135%"2Complete the task associated to this TODO comment.(ßĞ¼­8å¼—Çº1

@@ -1,4 +1,4 @@
-package com.lambarki.fraud;
+package com.lambarki.clients.fraud;
 
-public record FraudCheckResponse (Boolean isFraudster){
+public record FraudCheckResponse(Boolean isFraudster){
 }
