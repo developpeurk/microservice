@@ -1,8 +1,6 @@
 package com.lambarki.fraud;
 
 import com.lambarki.clients.fraud.FraudCheckResponse;
-import io.opentelemetry.api.trace.Span;
-import io.opentelemetry.context.Scope;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,13 +19,7 @@ public class FraudController {
     @GetMapping(path = "{customerId}")
     public FraudCheckResponse isFraudster(@PathVariable("customerId") Integer customerID) {
         boolean isFraudulentCustomer = fraudCheckService.isFraudulentCustomer(customerID);
-        Span currentSpan = Span.current();
-        try (
-                Scope scope = currentSpan.makeCurrent()) {
-            String traceId = currentSpan.getSpanContext().getTraceId();
-            String spanId = currentSpan.getSpanContext().getSpanId();
-            log.info("Trace ID: {}, Span ID: {}, fraud check request for customer {}", traceId, spanId, customerID);
+            log.info("fraud check request for customer {}",  customerID);
             return new FraudCheckResponse(isFraudulentCustomer);
         }
-    }
 }

@@ -1,8 +1,6 @@
 package com.lambarki.notification;
 
 import com.lambarki.clients.notification.NotificationRequest;
-import io.opentelemetry.api.trace.Span;
-import io.opentelemetry.context.Scope;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,12 +17,7 @@ public class NotificationController {
 
     @PostMapping
     public void sendNotification(@RequestBody NotificationRequest notificationRequest) {
-        Span currentSpan = Span.current();
-        try (Scope scope = currentSpan.makeCurrent()) {
-            String traceId = currentSpan.getSpanContext().getTraceId();
-            String spanId = currentSpan.getSpanContext().getSpanId();
-            log.info("Trace ID: {}, Span ID: {}, New notification... {}", traceId, spanId, notificationRequest);
+            log.info("New notification... {}", notificationRequest);
             notificationService.send(notificationRequest);
         }
-    }
 }
