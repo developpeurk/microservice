@@ -1,0 +1,35 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: fraud
+  datasource:
+    username: 'yassine'
+    password: 'yassine'
+    url: jdbc:postgresql://postgres:5432/fraud
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+management:
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://zipkin:9411/api/v2/spans
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
