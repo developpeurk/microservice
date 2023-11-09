@@ -1,5 +1,5 @@
+com\lambarki\clients\notification\NotificationClient.class
 com\lambarki\clients\fraud\FraudClient.class
 com\lambarki\clients\notification\NotificationRequest.class
 com\lambarki\clients\App.class
 com\lambarki\clients\fraud\FraudCheckResponse.class
-com\lambarki\clients\notification\NotificationClient.class

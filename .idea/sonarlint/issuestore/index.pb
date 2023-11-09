@@ -88,8 +88,6 @@ d
 ]
 -apigw/src/test/java/com/lambarki/AppTest.java,e\8\e87e554691b543599285f18baec449a750065cd8
 Z
-*k8s/minikube/bootstrap/postgres/config.yml,4\b\4b5c001d3cd89f33042d4dbae3b47c12095d251a
-Z
 *k8s/minikube/bootstrap/postgres/volume.yml,f\b\fbacfd66baab2191b9958291ab8aa5cd910b7160
 \
 ,k8s/minikube/bootstrap/postgres/services.yml,5\8\5819c287e857630603dc208b4a0e57a66e71ed8f
@@ -109,3 +107,15 @@ X
 ,k8s/minikube/bootstrap/rabbitmq/services.yml,4\5\45bdb4e17fd742d09c761739e3b9c23d5c3d20f3
 _
 /k8s/minikube/bootstrap/rabbitmq/statefulset.yml,1\1\115e302e19f615289692a27924c5a31956dc77a2
+Z
+*k8s/minikube/services/customer/service.yml,e\d\edcdcdca78158198e3c15e1a14d4284cdb45046f
+]
+-k8s/minikube/services/customer/deployment.yml,4\3\437e10bde4754f718d85cf3c0bf8ea7fb0127d48
+Z
+*k8s/minikube/services/fraud/deployment.yml,d\6\d6cdd77751bcd396d19ef12321e88f97e4f0d201
+W
+'k8s/minikube/services/fraud/service.yml,0\b\0b34ddf6911ba8e105f6182f14fbeceaa56ce62a
+a
+1k8s/minikube/services/notification/deployment.yml,d\c\dccc73a97e3e3e2f43da881e27ca4e906accd48e
+^
+.k8s/minikube/services/notification/service.yml,c\a\ca36237f1b8d0aa39d7610f3f4b949ccbe6ab12b
